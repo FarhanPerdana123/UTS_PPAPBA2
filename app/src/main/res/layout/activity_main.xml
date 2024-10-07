@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/horizontal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="30dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/horizontal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="101dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/horizontal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="186dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/horizontal4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_contet"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="550dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/horizontal5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_contet"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="670dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/horizontal6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_contet"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="1100dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/horizontal7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_contet"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="1230dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/horizontal8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_contet"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="1580dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="10dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vertical2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="350dp" />
+
+            <ImageView
+                android:id="@+id/logoInstagram"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/instagram_logo"
+                app:layout_constraintBottom_toBottomOf="@+id/horizontal1"
+                app:layout_constraintStart_toStartOf="@+id/vertical1"
+                app:layout_constraintTop_toTopOf="@+id/horizontal1"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/loveTop"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintBottom_toBottomOf="@+id/horizontal1"
+                app:layout_constraintEnd_toStartOf="@+id/vertical2"
+                app:layout_constraintStart_toEndOf="@+id/vertical2"
+                app:layout_constraintTop_toTopOf="@+id/horizontal1"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/shareTop"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="13dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_share"
+                app:layout_constraintBottom_toBottomOf="@+id/horizontal1"
+                app:layout_constraintStart_toEndOf="@+id/loveTop"
+                app:layout_constraintTop_toTopOf="@+id/horizontal1"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/storyUser"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/user_story"
+                app:layout_constraintBottom_toTopOf="@+id/horizontal2"
+                app:layout_constraintStart_toEndOf="@+id/vertical1"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal2" />
+
+            <TextView
+                android:id="@+id/textStory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/story"
+                app:layout_constraintBottom_toBottomOf="@+id/storyUser"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <ImageView
+                android:id="@+id/assetStory"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/asset_story"
+                app:layout_constraintBottom_toTopOf="@+id/horizontal2"
+                app:layout_constraintStart_toEndOf="@id/storyUser"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal2" />
+
+            <TextView
+                android:id="@+id/textAsset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/asset"
+                app:layout_constraintBottom_toBottomOf="@+id/assetStory"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="109dp" />
+
+            <ImageView
+                android:id="@+id/ligaStory"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/liga_story"
+                app:layout_constraintBottom_toTopOf="@+id/horizontal2"
+                app:layout_constraintStart_toEndOf="@id/assetStory"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal2" />
+
+            <TextView
+                android:id="@+id/textLiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Liga"
+                app:layout_constraintBottom_toBottomOf="@+id/ligaStory"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="197dp" />
+
+            <ImageView
+                android:id="@+id/assetStory2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/asset_story"
+                app:layout_constraintBottom_toTopOf="@+id/horizontal2"
+                app:layout_constraintStart_toEndOf="@id/ligaStory"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal2" />
+
+            <TextView
+                android:id="@+id/textAsset2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/asset"
+                app:layout_constraintBottom_toBottomOf="@+id/assetStory2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="270dp" />
+
+            <ImageView
+                android:id="@+id/ligaStory2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/liga_story"
+                app:layout_constraintBottom_toTopOf="@+id/horizontal2"
+                app:layout_constraintStart_toEndOf="@id/assetStory2"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal2" />
+
+            <TextView
+                android:id="@+id/textLiga2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Liga"
+                app:layout_constraintBottom_toBottomOf="@+id/ligaStory2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="357dp" />
+
+            <ImageView
+                android:id="@+id/profileFufufafa"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/fufufafa_pp"
+                app:layout_constraintBottom_toTopOf="@+id/horizontal3"
+                app:layout_constraintStart_toEndOf="@+id/vertical1"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal3" />
+
+            <TextView
+                android:id="@+id/nameFufufafa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="@string/fufufafa"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/horizontal3"
+                app:layout_constraintStart_toStartOf="@+id/profileFufufafa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="putra Mulyono"
+                app:layout_constraintStart_toStartOf="@+id/profileFufufafa"
+                app:layout_constraintTop_toBottomOf="@id/horizontal3" />
+
+            <ImageView
+                android:id="@+id/titikTiga"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_titik_tiga"
+                app:layout_constraintBottom_toTopOf="@+id/horizontal3"
+                app:layout_constraintStart_toStartOf="@id/vertical2"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal3"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imageFufufafa"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/post_fufufafa"
+                tools:layout_editor_absoluteX="-3dp"
+                tools:layout_editor_absoluteY="215dp" />
+
+            <ImageView
+                android:id="@+id/like"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal4"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toTopOf="@id/horizontal4" />
+
+            <ImageView
+                android:id="@+id/chat"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/ic_comment"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal4"
+                app:layout_constraintStart_toStartOf="@id/like"
+                app:layout_constraintTop_toTopOf="@id/horizontal4" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/ic_share"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal4"
+                app:layout_constraintStart_toStartOf="@id/chat"
+                app:layout_constraintTop_toTopOf="@id/horizontal4" />
+
+            <ImageView
+                android:id="@+id/bookmark"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_bookmark"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal4"
+                app:layout_constraintStart_toStartOf="@id/vertical2"
+                app:layout_constraintTop_toTopOf="@id/horizontal4" />
+
+            <TextView
+                android:id="@+id/disukai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Disukai oleh Ikhwan_Hanif"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toBottomOf="@id/like" />
+
+            <TextView
+                android:id="@+id/fufufafa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Fufufafa"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toBottomOf="@id/disukai" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="5dp"
+                android:text="#Proud"
+                android:textColor="@color/blue"
+                app:layout_constraintStart_toStartOf="@id/fufufafa"
+                app:layout_constraintTop_toBottomOf="@id/disukai" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="tampilkan 10 komentar lainnya"
+                android:textColor="@color/abu"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toBottomOf="@id/fufufafa" />
+
+            <ImageView
+                android:id="@+id/assetProfile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/assets_ugm_pp"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal5"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toTopOf="@id/horizontal5" />
+
+            <TextView
+                android:id="@+id/asset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="@asset_ugm"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal5"
+                app:layout_constraintStart_toStartOf="@id/assetProfile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Sekolah Vokasi Universitas Gadjah Mada"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/assetProfile"
+                app:layout_constraintTop_toTopOf="@id/horizontal5" />
+
+            <ImageView
+                android:id="@+id/titikTiga2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_titik_tiga"
+                app:layout_constraintBottom_toTopOf="@+id/horizontal5"
+                app:layout_constraintStart_toStartOf="@id/vertical2"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal5"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/assetPost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/post_asset"
+                tools:layout_editor_absoluteX="-21dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <ImageView
+                android:id="@+id/like2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal6"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toTopOf="@id/horizontal6" />
+
+            <ImageView
+                android:id="@+id/chat2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/ic_comment"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal6"
+                app:layout_constraintStart_toStartOf="@id/like2"
+                app:layout_constraintTop_toTopOf="@id/horizontal6" />
+
+            <ImageView
+                android:id="@+id/share2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/ic_share"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal6"
+                app:layout_constraintStart_toStartOf="@id/chat2"
+                app:layout_constraintTop_toTopOf="@id/horizontal6" />
+
+            <ImageView
+                android:id="@+id/bookmark2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_bookmark"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal6"
+                app:layout_constraintStart_toStartOf="@id/vertical2"
+                app:layout_constraintTop_toTopOf="@id/horizontal6" />
+
+            <TextView
+                android:id="@+id/disukai2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Disukai oleh Ikhwan_Hanif"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toBottomOf="@id/like2" />
+
+            <TextView
+                android:id="@+id/assetlike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Assets UGM"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toBottomOf="@id/disukai2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="5dp"
+                android:text="#Proud"
+                android:textColor="@color/blue"
+                app:layout_constraintStart_toStartOf="@id/assetlike"
+                app:layout_constraintTop_toBottomOf="@id/disukai2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="tampilkan 20 komentar lainnya"
+                android:textColor="@color/abu"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toBottomOf="@id/assetlike" />
+
+            <ImageView
+                android:id="@+id/ligaProfile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/liga_trpl_pp"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal7"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toTopOf="@id/horizontal7" />
+
+            <TextView
+                android:id="@+id/liga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Liga TRPL"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal7"
+                app:layout_constraintStart_toStartOf="@id/ligaProfile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Menyambut Liga Terpal"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/ligaProfile"
+                app:layout_constraintTop_toTopOf="@id/horizontal7" />
+
+            <ImageView
+                android:id="@+id/titikTiga3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_titik_tiga"
+                app:layout_constraintBottom_toTopOf="@+id/horizontal7"
+                app:layout_constraintStart_toStartOf="@id/vertical2"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal7"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/postLiga"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/post_liga"
+                tools:layout_editor_absoluteX="-3dp"
+                tools:layout_editor_absoluteY="1260dp" />
+
+            <ImageView
+                android:id="@+id/like3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal8"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toTopOf="@id/horizontal8" />
+
+            <ImageView
+                android:id="@+id/chat3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/ic_comment"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal8"
+                app:layout_constraintStart_toStartOf="@id/like3"
+                app:layout_constraintTop_toTopOf="@id/horizontal8" />
+
+            <ImageView
+                android:id="@+id/share3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/ic_share"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal8"
+                app:layout_constraintStart_toStartOf="@id/chat3"
+                app:layout_constraintTop_toTopOf="@id/horizontal8" />
+
+            <ImageView
+                android:id="@+id/bookmark3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_bookmark"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal8"
+                app:layout_constraintStart_toStartOf="@id/vertical2"
+                app:layout_constraintTop_toTopOf="@id/horizontal8" />
+
+            <TextView
+                android:id="@+id/disukai3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Disukai oleh Ikhwan_Hanif"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toBottomOf="@id/like3" />
+
+            <TextView
+                android:id="@+id/ligaLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Liga Trpl"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toBottomOf="@id/disukai3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="5dp"
+                android:text="#Proud"
+                android:textColor="@color/blue"
+                app:layout_constraintStart_toStartOf="@id/ligaLike"
+                app:layout_constraintTop_toBottomOf="@id/disukai3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="tampilkan 15 komentar lainnya"
+                android:textColor="@color/abu"
+                app:layout_constraintStart_toStartOf="@id/vertical1"
+                app:layout_constraintTop_toBottomOf="@id/ligaLike" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
